@@ -1,0 +1,171 @@
+:root {
+    --dark-blue: #192034;
+    --dark-blue2: #171E2D;
+    --dark-blue3: #1D2741;
+    --dark-blue4:  #2A3C69;
+    --dark-blue5: #1F2841;
+    --dark-blue6:  #253255;
+
+    --blue: #375090;
+    --blue2: #5B8AFF;
+
+    --white: #FFFFFF;
+    --light-white: rgb(255, 255, 255, 0.5);
+
+    --blue-gradient: linear-gradient(133.16deg, #5B8BFF 25.76%, #5BECFF 173.83%);
+
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-wrap {
+    display: block;
+}
+
+.desktop-text-wrap {
+    display: block;
+}
+
+
+.img-mobile {
+    display: none;
+}
+
+/*.btn-primary {*/
+/*    background: var(--blue-gradient);*/
+/*    font-weight: 400;*/
+/*    font-size: 15px;*/
+/*    line-height: 100%;*/
+/*    text-align: center;*/
+/*    color: var(--white);*/
+/*    padding: 18px 45px;*/
+/*    border-radius: 15px;*/
+/*}*/
+
+
+
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+    background: var(--blue-gradient);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--white);
+    padding: 18px 45px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.btn-primary::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(148.48deg, #5B8BFF -62.06%, #5BECFF 208.26%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.btn-primary:hover::before {
+    opacity: 1;
+}
+
+
+
+.section {
+    margin-top: 150px;
+}
+
+.section-title {
+    gap: 15px;
+    justify-content: center;
+
+}
+
+.section-title img {
+    max-width: 26px;
+}
+
+.section-title h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--white);
+    text-align: center;
+
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+
+
+}
+
+@media (max-width: 992px) {
+
+
+}
+
+@media (max-width: 768px) {
+
+    .desktop-text-wrap {
+        display: inline;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .img-desktop {
+        display: none;
+    }
+
+
+    .img-mobile {
+        display: block;
+
+    }
+
+
+    .mobile-text-wrap {
+        display: block;
+    }
+
+    .section {
+        margin-top: 102px;
+    }
+    .section-title {
+        gap: 15px;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+}
+
+@media (max-width: 400px) {
+
+}

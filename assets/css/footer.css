@@ -1,0 +1,174 @@
+
+.footer {
+    margin-top: 30px;
+    padding: 62px 0 0;
+    border-top: 1px solid var(--blue);
+    min-height: 420px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-decor {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.footer-menu-list {
+    gap: 25px;
+}
+
+.footer-decor img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.footer-body {
+    align-items: center;
+    gap: 125px;
+    flex-wrap: wrap;
+}
+
+.footer-clue {
+
+}
+
+.footer-actions {
+    gap: 10px;
+}
+
+.footer-logo {
+    flex: 1 1 auto;
+}
+
+.footer-clue {
+    margin-top: 33px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    vertical-align: middle;
+    color: var(--white);
+    opacity: .2;
+
+}
+
+.footer-clue-mobile{
+
+    display: none;
+}
+
+@media (max-width: 1500px) {
+    .footer-decor {
+        bottom: -10px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .footer-decor {
+        bottom: -22px;
+    }
+
+    .footer {
+        border-top: none;
+        padding: 72px 0 0;
+
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .footer-body {
+        gap: 20px;
+    }
+
+    .footer-logo {
+        flex: unset;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .footer-menu-list .menu-item{
+        width: unset;
+    }
+    .footer-menu-list .menu-link{
+        padding: 0;
+        border-bottom: 0;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 576px) {
+    .footer-body{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-menu-list{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer {
+        margin-top: 100px;
+        padding: 62px 0 0;
+        border-top: 1px solid var(--blue);
+        min-height: 683px;
+        background: #171E2D;
+    }
+
+    .footer-decor {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+        height: 260px;
+    }
+
+    .footer-menu-list {
+        gap: 25px;
+    }
+
+    .footer-decor img {
+        width: 100%;
+        height: unset;
+    }
+
+    .footer-clue {
+        display: none;
+
+    }
+
+    .footer-clue-mobile{
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        vertical-align: middle;
+        color: var(--white);
+        opacity: .2;
+        display: block;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 456px) {
+    .footer-actions{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .footer-actions button{
+        width: 100%;
+    }
+}

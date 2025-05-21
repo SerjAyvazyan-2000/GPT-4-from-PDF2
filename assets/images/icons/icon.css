@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.icon-chatGpt{
+    mask-image: url(chatGpt.svg);
+    -webkit-mask-image: url(chatGpt.svg);
+}
+
+.icon-powered{
+    mask-image: url(powered.svg);
+    -webkit-mask-image: url(powered.svg);
+}
+.icon-folder{
+    mask-image: url(folder.svg);
+    -webkit-mask-image: url(folder.svg);
+}
